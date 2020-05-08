@@ -1,19 +1,9 @@
 const circles = document.querySelectorAll('.circle')
-let activeLight = 0;
 
 setInterval(() => {
   changeLight();
 },500);
 
 function changeLight() {
-  circles[activeLight].className = 'circle'
-  activeLight++;
-
-if(activeLight > 7) {
-  activeLight = 0;
-  }
-
-  const currentLight = circles[activeLight]
-
-  currentLight.classList.add(currentLight.getAttribute('color'))
+circles.classList.remove()
 }
