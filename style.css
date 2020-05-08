@@ -32,6 +32,12 @@ body {
   border-radius: 25px;
 }
 
+button:hover {
+  background: rgb(184, 134, 222);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
 .main {
   background:rgb(57, 53, 75);
   border-radius: 25px;
@@ -90,7 +96,6 @@ body {
 .red {
 	background-color: #c0392b;
   animation: glow-1 2s infinite;
-  animation-fill-mode: both;
 }
 
 
