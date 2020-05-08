@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+
 }
 
 body {
@@ -8,6 +9,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  overflow: hidden;
 }
 .utilities {
   position: absolute;
@@ -45,7 +47,7 @@ body {
   margin: 1rem;
   border-radius: 50%;
   height: 50px;
-  width: 30px;
+  width: 50px;
   background: rgba(0,0,0,0.3);
   position: relative;
 }
@@ -55,8 +57,8 @@ body {
   content: '';
   height: 15px;
   width: 15px;
-  left: 7.5px;
-  top: -12px;
+  left: 17.5px;
+  top: -15px;
   margin: 0;
   padding: 0;
   display: block;
@@ -70,9 +72,9 @@ body {
   position: absolute;
   content: "";
   top: -20px;
-  left: 20px;
+  left: 30px;
   position: absolute;
-  width: 52px;
+  width: 70px;
   height: 18.6666666667px;
   border-bottom: solid #222 2px;
   border-radius: 50%;
