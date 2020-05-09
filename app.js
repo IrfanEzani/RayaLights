@@ -1,13 +1,30 @@
 const circle = document.getElementsByClassName('circle')
-const red = document.getElementsByClassName('red')
-const blue = document.getElementsByClassName('blue')
-const yellow = document.getElementsByClassName('yellow')
-const green = document.getElementsByClassName('green')
-const button = document.getElementById('btn')
+const play = document.getElementById('play')
+const stop = document.getElementById('stop')
+const btn = document.getElementById('submit')
+var len = circle.length;
 
-button.addEventListener('click', function() {
- circle.classList.remove('red');
- circle.classList.remove('blue');
- circle.classList.remove('yellow');
- circle.classList.remove('green');
-})
+const on = function() {
+  for (var i = 0; i < len; i++) {
+    circle[i].removeAttribute("style");
+    circle[i].style.animationPlayState = "running";
+    circle[i].style.WebkitAnimationPlayState = "running";
+  }
+}
+
+const off = function() {
+  for (var i = 0; i < len; i++) {
+    circle[i].style.animation = "none";
+    circle[i].style.background = "#563260";
+  }
+}
+
+function convert() {
+  var speed = document.getElementById('quantity').value;
+  for (var i = 0; i < len; i++) {
+    circle[i].style.animationDuration = speed + "s";
+  }
+}
+
+play.addEventListener('click', on);
+stop.addEventListener('click', off);
